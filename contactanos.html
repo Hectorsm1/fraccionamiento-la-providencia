@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos  | Fraccionamiento la Providencia</title>
+    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="casas.html">Casas</a>
+        <a href="terrenos.html">Terrenos</a>
+        <a href="about.html">Acerca de</a>
+        <a href="contactanos.html">Contactanos</a>
+    </nav>
+    <section class="textos-header">
+        <h1>¿Aún tienes algúna duda?</h1>
+        <h2>No te preocupes, comunicate con nosotros</h2>
+    </section>
+
+    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #fff;"></path>
+    </svg></div>
+
+</header>
+
+<body>
+    
+    <main>
+        <section class="container">
+            <h1 class="titulo">Contáctanos</h1>
+            
+        </section>
+
+     <section class="row md  justift-content-center">
+        <div class="col-md-6">
+         <div style=" text-align: center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1874.0736037950785!2d-100.7501756966508!3d20.044275888811498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cd6541a5ece47%3A0xe359eb7f7d17474d!2sFracc%20La%20Providencia!5e0!3m2!1ses-419!2smx!4v1625878455382!5m2!1ses-419!2smx" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        </div>
+
+        <div class="col-md-6 mt-6 mt-md-0">
+            <h2 class="h2">Dejenos sus dudas o aclaraciones.</h2>
+            <hr class="my-2">
+            <div class="contenido-textos">
+                <h3><span>1</span>Si deseas información o establecer contacto con algún asesor especializado, favor de llenar los siguientes campos: </h3>
+
+            </div>
+
+            <form id="form" action="" class="form">
+                <div class="form-group">
+                    <label for="nombre"> Nombre completo: </label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" id="exampleFormControlInput1" required placeholder="Nombre completo" >
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Correo electrónico: </label>
+                  <input type="email" id="email" name="email" class="form-control" id="exampleFormControlInput1" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Comentario: </label>
+                  <textarea class="form-control" id="comentario" name="comentario" id="exampleFormControlTextarea1" required placeholder="Escriba su comentario." rows="3"></textarea>
+                </div>
+                <div class=" row justify-content-center py-3">
+                    <button type="submit" class="btn btn-success" > Enviar. </button>
+                </div>
+              </form>
+              <a href="mailto:valledeacambaro2@hotmail.com" id="mail"  ></a>
+
+        </div>
+     </section>
+       
+     <section class="about-services">
+        <div class="contenedor">
+            <h2 class="titulo">O contáctanos por nuestra red social.</h2>
+            <div class="servicio-cont">
+                <div class="servicio-ind">
+                    <img src="" alt="">
+                    
+                    
+                </div>
+                <div class="servicio-ind">
+                    <img src="img/facebook_icon.png" alt="">
+                    <h3> <a href="https://www.facebook.com/margarita.montes.56481"> facebook </a></h3>
+                    
+                </div>
+                <div class="servicio-ind">
+                    <img src="" alt="">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<br>
+<footer>
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>Celular:</h4>
+            <p>417-108-4351</p>
+        </div>
+        <div class="content-foo">
+            <h4>Email:</h4>
+            <p>valledeacambaro2@hotmail.com</p>
+        </div>
+        <div class="content-foo">
+            <h4>Localidad:</h4>
+            <p> C.P.38787 Acámbaro, Gto.</p>
+        </div>
+    </div>
+    <h2 class="titulo-final">&copy; Fraccionamineto La Providencia</h2>
+</footer>  
+
+<script>
+
+    const $form = document.querySelector('#form')
+    const $buttonMailto = document.querySelector('#mail')
+
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event){
+        event.preventDefault()
+        const form = new FormData(this)
+       
+        $buttonMailto.setAttribute('href', `mailto:valledeacambaro2@hotmail.com?subject=nombre ${form.get('nombre')} 
+        correo${form.get('email')}&body=${form.get('comentario')}`)
+        $buttonMailto.click()
+
+    }
+
+</script>
+</html>
